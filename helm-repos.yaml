@@ -1,0 +1,15 @@
+---
+apiVersion: kustomize.toolkit.fluxcd.io/v1beta2
+kind: Kustomization
+metadata:
+  name: helm-repos
+  namespace: flux-system
+spec:
+  interval: 10m
+  path: "./infrastructure/flux-system/helm-repos"
+  targetNamespace: flux-system
+  prune: true
+  sourceRef:
+    kind: GitRepository
+    name: flux-system
+    namespace: flux-system
