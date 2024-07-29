@@ -18,12 +18,5 @@ spec:
   values:
     replicaCount: 2
     installCRDs: true
-    prometheus:
-      enabled: true
-      servicemonitor:
-        enabled: true
-        prometheusInstance: default
-        targetPort: 9402
-        path: /metrics
-        interval: 60s
-        scrapeTimeout: 30s
+    extraArgs:
+      - --enable-certificate-owner-ref=true
