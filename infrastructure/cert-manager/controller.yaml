@@ -5,7 +5,7 @@ metadata:
   namespace: flux-system
 spec:
   interval: 5m
-  path: "./clusters/production/infrastructure/cert-manager/controller"
+  path: "./infrastructure/cert-manager/controller"
   targetNamespace: cert-manager
   prune: true
   sourceRef:
