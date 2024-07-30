@@ -6,9 +6,9 @@ metadata:
   namespace: production
 spec:
   secretName: prod-net-crt
-  commonName: "test-test.my.com"
+  commonName: "k8s-admin.ru"
   issuerRef:
     kind: ClusterIssuer
     name: letsencrypt-prod
   dnsNames:
-    - test-test.my.com"
+    - test.k8s-admin.ru"
