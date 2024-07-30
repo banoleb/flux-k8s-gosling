@@ -1,0 +1,4 @@
+---
+resources:
+  - flux_kust_cert.yaml
+  - namespace.yaml
