@@ -11,4 +11,4 @@ spec:
     kind: ClusterIssuer
     name: letsencrypt-prod
   dnsNames:
-    - test.k8s-admin.ru"
+    - "test.k8s-admin.ru"
