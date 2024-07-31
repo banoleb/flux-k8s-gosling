@@ -2,13 +2,13 @@
 apiVersion: cert-manager.io/v1
 kind: Certificate
 metadata:
-  name: prod-net-crt
+  name: prod-net-crt-web
   namespace: production
 spec:
-  secretName: prod-net-crt
-  commonName: "test.k8s-admin.ru"
+  secretName: prod-net-crt-web
+  commonName: "web.k8s-admin.ru"
   issuerRef:
     kind: ClusterIssuer
     name: letsencrypt-prod
   dnsNames:
-    - test.k8s-admin.ru"
+    - web.k8s-admin.ru"
