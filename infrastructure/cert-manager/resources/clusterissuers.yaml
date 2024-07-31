@@ -7,7 +7,7 @@ spec:
     # You must replace this email address with your own.
     # Let's Encrypt will use this to contact you about expiring
     # certificates, and issues related to your account.
-    email: user@example.com
+    email: johnlvov@list.ru
     server: https://acme-staging-v02.api.letsencrypt.org/directory
     privateKeySecretRef:
       # Secret resource that will be used to store the account's private key.
@@ -19,11 +19,9 @@ spec:
             groupName: acme.selectel.ru
             solverName: selectel
             config:
-              apiKeySecretRef:
+              dnsSecretRef:
                 name: selectel-dns-credentials
-                key: token
               ttl: 60
               timeout: 30
               propagationTimeout: 90
               pollingInterval: 2
-
