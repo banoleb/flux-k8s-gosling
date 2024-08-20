@@ -12,9 +12,16 @@ stringData:
           commonConfig:
             replication_factor: 1
           storage:
-            type: 'filesystem'
-
-
-
-
-
+            bucketNames:
+              chunks: my-dev-loki-chunks
+              ruler: my-dev-loki-ruler
+              admin: my-dev-loki-admin
+            type: s3
+            s3:
+              s3: s3.ru-1.storage.selcloud.ru
+              endpoint: https://s3.ru-1.storage.selcloud.ru
+              region: "ru-1"
+              secretAccessKey: 
+              accessKeyId: 
+              s3ForcePathStyle: true
+              insecure: false
