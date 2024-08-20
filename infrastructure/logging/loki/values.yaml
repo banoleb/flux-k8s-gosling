@@ -4,10 +4,9 @@ kind: Secret
 metadata:
     name: loki-values
     namespace: logging
-stringData:
-    values.yaml: |
-        loki:
-          commonConfig:
-            replication_factor: 1
-          storage:
-            type: 'filesystem'
+loki:
+  deploymentMode: SingleBinary
+  commonConfig:
+    replication_factor: 1
+  storage:
+    type: 'filesystem'
