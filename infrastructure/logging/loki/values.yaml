@@ -7,8 +7,8 @@ metadata:
     namespace: logging
 stringData:
     values.yaml: |
+        deploymentMode: SingleBinary
         loki:
-          deploymentMode: SingleBinary
           commonConfig:
             replication_factor: 1
           storage:
@@ -21,7 +21,7 @@ stringData:
               s3: s3.ru-1.storage.selcloud.ru
               endpoint: https://s3.ru-1.storage.selcloud.ru
               region: "ru-1"
-              secretAccessKey: 
-              accessKeyId: 
+              secretAccessKey:
+              accessKeyId:
               s3ForcePathStyle: true
               insecure: false
