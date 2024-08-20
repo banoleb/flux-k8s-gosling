@@ -1,12 +1,20 @@
 ---
+                                                              
 apiVersion: v1
 kind: Secret
 metadata:
     name: loki-values
     namespace: logging
-loki:
-  deploymentMode: SingleBinary
-  commonConfig:
-    replication_factor: 1
-  storage:
-    type: 'filesystem'
+stringData:
+    values.yaml: |
+        loki:
+          deploymentMode: SingleBinary
+          commonConfig:
+            replication_factor: 1
+          storage:
+            type: 'filesystem'
+
+
+
+
+

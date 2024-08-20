@@ -15,4 +15,7 @@ spec:
         name: grafana
         namespace: flux-system
       interval: 10m
-  valuesFile: values.yaml
+  valuesFrom:
+    - kind: Secret
+      name: loki-values
+      valuesKey: values.yaml
