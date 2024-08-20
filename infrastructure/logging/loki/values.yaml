@@ -1,4 +1,7 @@
 ---
+metadata:
+  name: loki
+  namespace: logging
 deploymentMode: SingleBinary
 loki:
   commonConfig:
