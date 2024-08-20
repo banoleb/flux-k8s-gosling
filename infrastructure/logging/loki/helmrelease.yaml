@@ -19,3 +19,9 @@ spec:
     - kind: Secret
       name: loki-values
       valuesKey: values.yaml
+  values:
+    deploymentMode: SingleBinary
+    loki:
+      commonConfig:
+        replication_factor: 1
+  
