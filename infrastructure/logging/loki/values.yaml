@@ -8,13 +8,6 @@ metadata:
 stringData:
     values.yaml: |
         deploymentMode: SingleBinary
-          persistence:
-            # -- Enable StatefulSetAutoDeletePVC feature
-            enableStatefulSetAutoDeletePVC: true
-            # -- Enable persistent disk
-            enabled: true
-            # -- Size of persistent disk
-            size: 1Gi
         loki:
           commonConfig:
             replication_factor: 1
@@ -31,6 +24,13 @@ stringData:
               schema: v13
         singleBinary:
           replicas: 1
+          persistence:
+            # -- Enable StatefulSetAutoDeletePVC feature
+            enableStatefulSetAutoDeletePVC: true
+            # -- Enable persistent disk
+            enabled: true
+            # -- Size of persistent disk
+            size: 1Gi
         read:
           replicas: 0
         backend:
