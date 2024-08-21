@@ -1,0 +1,9 @@
+---
+apiVersion: source.toolkit.fluxcd.io/v1beta2
+kind: HelmRepository
+metadata:
+  name: nfsstorage-helm
+  namespace: nfsstorage
+spec:
+  interval: 10m
+  url: https://kubernetes-charts.storage.googleapis.com/
