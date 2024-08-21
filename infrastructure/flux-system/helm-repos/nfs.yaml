@@ -6,4 +6,4 @@ metadata:
   namespace: nfsstorage
 spec:
   interval: 10m
-  url: https://kubernetes-charts.storage.googleapis.com/
+  url: https://kubernetes-sigs.github.io/nfs-ganesha-server-and-external-provisioner/
